@@ -69,3 +69,30 @@ function tinyfriend(friends){
 }
 
 console.log(tinyfriend(friends));
+
+
+
+/* Assignment 5 */
+
+function countAnimal(depth){
+    let animal = 0;
+
+    if(depth <= 10){
+        animal = depth * 50;
+    } else if(depth <= 20){
+        let first10 = 10 * 50;
+        let remaining = depth - 10;
+        let second = remaining * 100;
+        animal = first10 + second;
+        
+    } else {
+        first10 = 10 * 50;
+        second = 10 * 100;
+        remaining = depth - 20;
+        third = remaining * 300;
+        animal = first10 + second + third;
+    }
+    return animal;
+}
+
+console.log(countAnimal(21));

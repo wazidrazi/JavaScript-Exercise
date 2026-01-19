@@ -55,7 +55,7 @@ console.log(brickCalculator(33));
 
 
 
-let friends = ["Rahim", "Karim", "Mushfiq", "John", "Doe"];
+let friends = ["Rahim", "Karim", "Mushfiq", "John", "Doe", "Tuhin", "Razi"];
 
 function tinyfriend(friends){
     let tiny = friends[0];

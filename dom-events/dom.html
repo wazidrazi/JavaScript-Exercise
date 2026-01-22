@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+</head>
+<body>
+   <main>
+    <section>
+         <h1 id="first">This is my first DOM learning</h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis deserunt numquam accusantium non sed perferendis commodi labore doloremque corporis est.</p>
+
+         <article>
+            <h3>article-1</h3>
+            <p class="author">author-1</p>
+            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore magni illo facilis cumque, odit distinctio. Possimus porro alias minima qui?</p>
+         </article>
+         <article>
+            <h3>article-2</h3>
+            <p class="author">author-2</p>
+            <p class="description">Non consequuntur sint velit impedit, illum repudiandae facilis quidem quam dicta aut earum rem. Quos consectetur labore nesciunt beatae facilis.</p>
+         </article>
+         <article>
+            <h3>article-3</h3>
+            <p class="author">author-3</p>
+            <p class="description">Iusto quisquam debitis architecto sit vitae nisi, rerum inventore ex itaque neque consequatur quaerat. Repudiandae beatae ex maiores ab debitis.</p>
+         </article>
+    </section>
+   </main>
+
+   <script>
+
+    let authors = document.getElementsByClassName('author');
+
+    for (let i = 0; i < authors.length; i++){
+        let element = authors[i];
+        console.log(element.innerHTML);
+        element.style.backgroundColor = 'brown';
+        element.style.margin = '10px';
+        
+    }
+
+    let first = document.getElementById('first')
+    first.style.color = 'green';
+    
+   </script>
+</body>
+</html>

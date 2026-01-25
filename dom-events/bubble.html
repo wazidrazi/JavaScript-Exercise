@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <h1>My List</h1>
+    <div id="container">
+        <ul id="myItem">
+            <li id="firstitem" class="item">Lorem, ipsum dolor.</li>
+            <li class="item">Omnis, debitis obcaecati.</li>
+            <li class="item">Et, fugiat odio.</li>
+            <li class="item">Et, fuga minus?</li>
+            <li class="item">Totam, repellendus omnis.</li>
+        </ul>
+
+        <button id="newItem">Add new item</button>
+    </div>
+
+
+
+    <script>
+        // document.getElementById('firstitem').addEventListener('click', function(event){
+        //     console.log('First item clicked');
+        // })
+        // document.getElementById('myItem').addEventListener('click', function(event){
+        //     console.log('Ul clicked');
+
+        //     event.stopPropagation();                                                              // to stop bubble
+        // })
+        // document.getElementById('container').addEventListener('click', function(event){
+        //     console.log('Container clicked');
+        // })
+
+
+        // let items = document.getElementsByClassName('item');
+        // for(let i = 0; i < items.length; i++){
+        //     let item = items[i];
+
+        //     item.addEventListener('click',function(event){
+        //         event.target.parentNode.removeChild(event.target);
+        //     })
+        // }
+
+        document.getElementById('newItem').addEventListener('click', function(event){
+            let itemParent = document.getElementById('myItem');
+            let addItem = document.createElement('li');
+            addItem.innerText = 'This is new item';
+            itemParent.appendChild(addItem);
+        })
+
+
+        document.getElementById('myItem').addEventListener('click', function(event){
+            event.target.parentNode.removeChild(event.target);
+        })
+        
+    </script>
+
+</body>
+</html>

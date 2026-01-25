@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handler</title>
+</head>
+<body>
+    <h1>Exploring Event</h1>
+
+    <button>click Me-1</button>
+    <button id="second">click Me-2</button>
+    <button id="third">click Me-3</button>
+    <button id="fourth">click Me-4</button>
+
+
+    <script>
+        function handleClick(){
+            document.body.style.backgroundColor = 'red';
+        }
+        function handleClick1(){
+            document.body.style.backgroundColor = 'green';
+        }
+
+        let secondBtn = document.getElementById('second');                // first technique
+        secondBtn.onclick = handleClick;
+
+        let thirdBtn = document.getElementById('third');                   // second technique
+        thirdBtn.addEventListener('click', handleClick1);
+
+
+        document.getElementById('fourth').addEventListener('click', function() {                // third technique 
+            document.body.style.color = 'blue';
+            document.body.style.fontSize = '50px';
+        })
+
+    </script>
+</body>
+</html>

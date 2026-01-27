@@ -21,8 +21,8 @@ body{
     background-color: slateblue;
 }
 .withdraw{
-    background-color: tomato;
+    background-color: rgb(206, 112, 96);
 }
 .balance{
-    background-color: blue;
+    background-color: rgb(132, 180, 69);
 }

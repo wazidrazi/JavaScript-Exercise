@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="login-area">
-        <h1 class="text-center">Welcome to Dhaka Bank PLC</h1>
+        <h1 class="text-center">Welcome to Safe Bank PLC</h1>
         <div class="submit-area">
             <h4>Login</h4>
             <input class="form-control" type="text" placeholder="Name">
@@ -86,6 +86,8 @@
         depositBtn.addEventListener("click", function(){
             const depositNumber = getInputNumber("deposit-amount");
 
+            /* without function-------------------------------------------- */
+
             // const currentDeposit = document.getElementById("current-deposit").innerText;
             // const currentDepositNumber = parseFloat(currentDeposit);
             // const totalDeposit = depositNumber + currentDepositNumber;
@@ -96,6 +98,8 @@
             // const currentBalanceNumber = parseFloat(currentBalance);
             // const totalBalance = depositNumber + currentBalanceNumber;
             // document.getElementById('current-balance').innerText = totalBalance;
+
+            /* ----------------------------------------------------- */
 
             updateSpanText("current-deposit", depositNumber);
             updateSpanText("current-balance", depositNumber);

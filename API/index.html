@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <h1>Javascript Object Notation</h1>
+
+
+    <script>
+        const user = {
+            name : "wazid",
+            age : 25,
+            id : 200048,
+            friends : ["Rahim", "Karim"],
+            age : [22, 24]
+        };
+        const convToJson = JSON.stringify(user);             // {"name":"wazid","age":25,"id":200048}
+        console.log(convToJson);
+
+        const jsonToUser = JSON.parse(convToJson);         // convert into normal object form
+        console.log(jsonToUser);
+
+
+    </script>
+</body>
+</html>

@@ -7,6 +7,9 @@
 </head>
 <body>
     <h1>Javascript object Notation</h1>
+    <ul id="user-container">
+
+    </ul>
 
 
     <script>
@@ -17,7 +20,15 @@
 
 
         function displayUser(users){
-            const userNames = users.map(user => user)
+            const userNames = users.map(user => user.username);
+            const ul = document.getElementById("user-container");
+
+            for(let i = 0; i < userNames.length; i++) {
+                const username = userNames[i];
+                const li = document.createElement("li");
+                li.innerText = username;
+                ul.appendChild(li);
+            }
         }
     </script>
 </body>
